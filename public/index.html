@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Webpage</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/app.css"/>
+</head>
+<body data-spy="scroll" data-target="#mt-navbar" data-offset="68">
+    <nav id="mt-navbar" class="navbar navbar-default navbar-changed navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mt-navbar-inner" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="http://minhta.com.au" class="navbar-brand img-responsive" title="Home"><img src="http://minhta.com.au/img/minhta-writing.png" alt="Writing"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="mt-navbar-inner">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#mt-home" title="Home"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Home</a></li>
+                    <li><a href="#mt-portfolio" title="Minh Ta's Portfolio"><span class="glyphicon glyphicon-tasks"></span>&nbsp;&nbsp;Portfolio</a></li>
+                    <li><a href="#mt-contact" title="Contact Minh Ta"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container main-container">
+        <div id="mt-home" class="mt-section">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="lead home-center">
+                        <blockquote>
+                            <p>"Where the vision is one year, cultivate flowers.<br>Where the vision is ten years, cultivate trees.<br>Where the vision is eternity, cultivate people."</p>
+                            <footer><em>Oriental Saying</em></footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <p class="lead text-center"><em>I am an Information Technology (IT) programmer who is interested in providing software and web-based solutions to support information systems efficiently and effectively aligned with the contexts and goals of organisations.</em></p>
+                </div>
+            </div>
+        </div>
+        <div id="mt-portfolio" class="mt-section text-center">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="mt-heading">
+                        <h3>Portfolio</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="thumbnail thumbnail-changed">
+                        <img src="http://minhta.com.au/upload/1/thumbnails/proj-09-quysine-website-a-thumbnail.jpg" alt="Image of Quysine Restaurant Website">
+                        <div class="caption">
+                            <h4>Quysine Restaurant Website</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="thumbnail thumbnail-changed">
+                        <img src="http://minhta.com.au/upload/1/thumbnails/proj-07-westend-garden-website-b-thumbnail.jpg" alt="Image of West End Garden Website">
+                        <div class="caption">
+                            <h4>West End Garden Restaurant Website</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="thumbnail thumbnail-changed">
+                        <img src="http://minhta.com.au/upload/1/thumbnails/proj-08-minhta-website-b-thumbnail.jpg" alt="Image of Minh Ta Website">
+                        <div class="caption">
+                            <h4>Minh Ta Website</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mt-contact" class="mt-section">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="mt-heading">
+                        <h3>Contact Me</h3>
+                    </div>
+                </div>
+            </div>
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="name">Name:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="name" placeholder="Enter name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="email">Email:</label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="email" placeholder="Enter email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-2" for="message">Message:</label>
+                    <div class="col-sm-10">
+                        <textarea id="message" cols="30" rows="10" class="form-control"  placeholder="Enter message"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-send"></span>&nbsp;&nbsp;Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <a class="mtscrolltop" href="#top">
+            <span class="sr-only">Back to Top</span>
+            <span class="glyphicon glyphicon-arrow-up"></span>
+        </a>
+    </div>
+
+    <div class="footer footer-container-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h4>NAVIGATION</h4>
+                    <p><a href="#mt-home" title="Home"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;Home</a></p>
+                    <p><a href="#mt-portfolio" title="Minh Ta's Portfolio"><span class="glyphicon glyphicon-tasks"></span>&nbsp;&nbsp;Portfolio</a></p>
+                    <p><a href="#mt-contact" title="Contact Minh Ta"><span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;Contact</a></p>
+                </div>
+                <div class="col-sm-6">
+                    <h4>CONNECT</h4>
+                    <div class="social-media-buttons">
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com/minhkashyu" class="btn-facebook" target="_blank">
+                            <i class="fa fa-facebook-official"></i>
+                        </a>
+                        <!-- Google+ -->
+                        <a href="https://plus.google.com/102717276383191857795" class="btn-googleplus" target="_blank">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/minh-ta-38242435" class="btn-linkedin" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer footer-container-bottom hidden-container">
+        <div class="container">
+            <p>Copyright &copy; 2016 <a href="http://minhta.com.au" title="Home">Minh Ta</a>. All Rights Reserved.</p>
+        </div>
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
