@@ -76,8 +76,7 @@ $navbar-toggle-margin: ($navbar-height - 7 * $navbar-inner-margin) / 2;
         li {
             a,
             a:focus,
-            a:hover,
-            a.active {
+            a:hover {
                 background: transparent;
                 @include nav-link;
             }
