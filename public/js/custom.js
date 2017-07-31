@@ -7,6 +7,14 @@ $(document).ready(function() {
             $(this).collapse('hide');
         }
     });
+    $(document).on('scroll', function(){
+        if($(window).scrollTop() > 100) {
+            $('.mtscrolltop').addClass('mtshow');
+        }
+        else {
+            $('.mtscrolltop').removeClass('mtshow');
+        }
+    });
 });
 
 var mtScroll = function (sectionID) {

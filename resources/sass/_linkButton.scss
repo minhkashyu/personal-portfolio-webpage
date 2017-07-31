@@ -1,0 +1,28 @@
+a {
+    color: $dark-ocean-blue;
+    text-decoration: none;
+    @include transition(color .25s ease-in-out);
+
+    &:focus,
+    &:hover {
+        color: $mid-ocean-blue;
+        text-decoration: none;
+    }
+}
+
+/* Button with background */
+.btn-default {
+    margin: 5px;
+    background-color: $dark-ocean-blue;
+    border: 0 none;
+    color: white;
+    @include transition(background-color .25s ease-in-out);
+
+    &.focus,
+    &:focus,
+    &:hover {
+        background-color: $mid-ocean-blue;
+        border: 0 none;
+        color: white;
+    }
+}

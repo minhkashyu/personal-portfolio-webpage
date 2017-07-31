@@ -1,0 +1,113 @@
+.footer {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container-top {
+    background-color: $black;
+    color: white;
+
+    h4 {
+        font-weight: 700;
+        margin-bottom: 1.7778em;
+    }
+
+    p {
+        text-align: left;
+        border-top: 1px solid rgba(255, 255, 255, 0.1); /* white with opacity */
+        padding: 0.785em 0 0.857em;
+        margin-bottom: 0;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        @include transition(color .25s ease-in-out);
+
+        &:focus,
+        &:hover {
+            color: $light-ocean-blue;
+            text-decoration: none;
+        }
+    }
+}
+
+.footer-container-bottom {
+    background-color: $dark-black;
+    color: $light-black;
+
+    p {
+        margin-bottom: 0;
+    }
+
+    a {
+        color: $light-black;
+        text-decoration: none;
+        padding: 0;
+        @include transition(color .25s ease-in-out);
+
+        &:focus,
+        &:hover {
+            color: $light-ocean-blue;
+            text-decoration: none;
+        }
+    }
+}
+
+/* Social media buttons on footer */
+.social-media-buttons {
+    text-align: center;
+
+    a {
+        font-size: 2em;
+        margin-right: 10px;
+    }
+
+    a:last-child {
+        margin-right: 0;
+    }
+
+    /* Facebook */
+    .btn-facebook {
+        background: transparent;
+
+        &.focus,
+        &:focus,
+        &:hover {
+            color: $facebook !important;
+        }
+    }
+
+    /* Google+ */
+    .btn-googleplus {
+        background: transparent;
+
+        &.focus,
+        &:focus,
+        &:hover {
+            color: $google !important;
+        }
+    }
+
+    /* Linkedin */
+    .btn-linkedin {
+        background: transparent;
+
+        &.focus,
+        &:focus,
+        &:hover {
+            color: $linkedin !important;
+        }
+    }
+
+    /* Twitter */
+    .btn-twitter {
+        background: transparent;
+
+        &.focus,
+        &:focus,
+        &:hover {
+            color: $twitter !important;
+        }
+    }
+}

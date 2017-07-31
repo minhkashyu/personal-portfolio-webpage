@@ -1,0 +1,36 @@
+.mtscrolltop {
+    background-color: $mid-ocean-blue;
+    cursor: pointer;
+
+    font-size: 20px;
+    line-height: 46px;
+    text-align: center;
+    vertical-align: middle;
+
+    display: none;
+    height: 46px;
+    width: 46px;
+    position: fixed;
+    right: 10px;
+    top: 50%;
+
+    @include opacity(0);
+    @include border-radius(10px);
+
+    z-index: 998;
+
+    span {
+        color: white;
+        z-index: 999;
+    }
+
+    &:hover {
+        @include opacity(100);
+        display: block;
+    }
+}
+
+.mtshow {
+    @include opacity(50);
+    display: block;
+}
