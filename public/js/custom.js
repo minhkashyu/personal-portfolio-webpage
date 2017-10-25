@@ -19,9 +19,10 @@ $(document).ready(function() {
 
 var mtScroll = function (sectionID) {
     // animate the scroll when click on navbar
-    $('a[href="#'+sectionID+'"]').click(function() {
+    $('a[href="#'+sectionID+'"]').on('click', function(e) {
         $('html, body').animate({
             scrollTop: $('#'+sectionID).offset().top - 60
         }, 1000);
+        e.preventDefault();
     });
 };
